@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>webform</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src=" http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js "></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Student Details</h2>
+            <form id="empForm" method="post">
+                <div class="form-group">
+                    <span><label for="empId">Roll NO:</label> <label id="empIdMsg">
+                        </label></span>
+                    <input type="number" class="form-control" name="empId" id="Id" placeholder="Enter roll no" onchange="getemp()" required>
+                </div>
+                <div class="form-group">
+                    <label for="empName">Name:</label>
+                    <input type="text" class="form-control" id="Name"
+                           placeholder="Enter  Name" name="empName">
+                </div>
+                <div class="form-group">
+                    <label for="empEmail">Class:</label>
+                    <input type="number" class="form-control" id="class"
+                           placeholder="Enter class" name="empEmail">
+                </div>
+                <div class="form-group">
+                    <label for="empHra">DOB:</label>
+                    <input type="date" class="form-control" id="dob"
+                           placeholder="Enter dob" name="empHra">
+                </div>
+                <div class="form-group">
+                    <label for="empda">Address:</label>
+                    <input type="text" class="form-control" id="add"
+                           placeholder="Enter Address" name="empda">
+                </div>
+                <div class="form-group">
+                    <label for="empded">Enrollment-date:</label>
+                    <input type="date" class="form-control" id="endate"
+                           placeholder="Enter enrollment" name="empded">
+                </div>
+                <button type="button" class="btn btn-primary" id="save" onclick="saveEmployee()" disabled >save</button>
+                <button type="button" class="btn btn-primary" id="change" onclick="changeData()" disabled >change</button>
+                <button type="button" class="btn btn-primary" id="reset" onclick="reset()" disabled >reset</button>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
